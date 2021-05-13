@@ -1,0 +1,6 @@
+service\SalesPerodServiceTest.class
+config\TestConfig.class
+service\DefaultProductServiceTest.class
+repository\ProductRepositoryTest.class
+controller\ProductControllerTest.class
+service\mock\MockProductService.class
