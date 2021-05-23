@@ -45,7 +45,8 @@ public class ProductControllerTest {
     public void createTest() throws Exception {
         Product product = new Product(3, "testProduct");
         String requestJson = mapper.writeValueAsString(product);
-        mockMvc.perform(post(URL).contentType(MediaType.APPLICATION_JSON_UTF8)
+        mockMvc.perform(post(URL)
+                .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .content(requestJson))
                 .andExpect(status().isCreated());
     }
